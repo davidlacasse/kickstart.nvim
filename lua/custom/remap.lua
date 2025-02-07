@@ -10,6 +10,7 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz')
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
 
 -- Primeagen remaps
+vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
 -- greatest remap ever
 vim.keymap.set('x', '<leader>p', [["_dP]])
@@ -21,3 +22,8 @@ vim.keymap.set('n', '<leader>Y', [["+Y]])
 vim.keymap.set({ 'n', 'v' }, '<leader>d', [["_d]])
 
 vim.keymap.set('n', '<leader>ss', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+vim.keymap.set('n', '<M-k>', ':1winc-<cr>')
+vim.keymap.set('n', '<M-j>', ':1winc+<cr>')
+vim.keymap.set('n', '<M-h>', ':1winc<<cr>')
+vim.keymap.set('n', '<M-l>', ':1winc><cr>')
